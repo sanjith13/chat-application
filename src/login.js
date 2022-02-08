@@ -12,6 +12,9 @@ function Login() {
       email,
       password,
     }).then((res)=>{
+      if(res.data === ""){
+        alert("invalid email and password");
+      }
       setusername(res.data.name)
     }).catch((err)=>{console.log(err)});
   }
@@ -20,7 +23,7 @@ function Login() {
       name,
       email,
       password,
-    }).then((res)=>{alert(`login to use ${res.data.name}`);}).catch((err)=>{console.log(err)});
+    }).then((res)=>{alert(`you can login now`);}).catch((err)=>{console.log(err)});
   }
   return <div className="login">
       <img src="https://cdn3.vectorstock.com/i/thumb-large/45/37/goat-head-logo-icon-back-vector-27404537.jpg" />
@@ -35,6 +38,7 @@ function Login() {
           <input type="password" value={password} onChange= {(e) => {setPassword(e.target.value)}} placeholder="password" /><br/>
           <button onClick={handleLogin}>getIn</button>
           <button onClick={handleSignup}>SignUp</button>
+          <p>*note if you have not logged in you need to fill the name,email and password fields and click signup button</p>
       </div>
       </div>
   </div>;
