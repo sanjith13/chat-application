@@ -1,0 +1,33 @@
+.message{
+    width: 100%;
+}
+.message__thisuser{
+    width:fit-content;
+    padding:15px 20px;
+    border-radius:10px;
+    background-color:blue;
+    color:white;
+    margin:auto 0 10px auto;
+}
+.message__thisuser > p{
+    font-size: 10px;
+    color: white;
+    float:right;
+    margin-top:20px;
+    margin-left: 5px;
+} 
+.message__otheruser{
+    width:fit-content;
+    margin-top:10px;
+    padding:15px 20px;
+    border-radius:10px;
+    background-color:greenyellow;
+    color:black;
+}
+.message__otheruser > p{
+    font-size: 10px;
+    color:black;
+    float:right;
+    margin-top:20px;
+    margin-left:5px;
+} 

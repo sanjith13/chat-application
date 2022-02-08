@@ -1,0 +1,33 @@
+.header{
+    background-color:blue;
+    display:flex;
+    position:sticky;
+    z-index:100;
+    padding: 20px 20px;
+    justify-content:space-between;
+}
+.header__logo > h1{
+    color:white;
+    font-family:fantasy;
+}
+.header__signout  {
+    display: flex;
+    float: right;
+    align-items: center;
+}
+.header__signout > button{
+    size:large;
+    padding: 10px;
+    background-color:white;
+    border-radius: 10px;
+    border: 2px solid greenyellow;
+    font-size: medium;
+    margin-left: 20px;
+}
+.header__signout > button:hover {
+    background-color:greenyellow;
+    color:white;
+}
+.header__signout > h3{
+    color:white;
+}

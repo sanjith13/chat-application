@@ -1,0 +1,26 @@
+.body{
+    padding:20px 20px;
+}
+.body__input{
+    margin-top: 40px;
+    text-align: center;
+    box-shadow: 10px blue;
+}
+.body__input > input{
+    padding:20px 60px;
+    border-radius:10px;
+    font-size: 20px;
+    background-color: rgb(222, 223, 245);
+    border:none
+}
+.body__input > button{
+    background-color:blue;
+    padding:20px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 2px solid greenyellow;
+}
+.body__input > button:hover{
+    background-color: greenyellow;
+    border : 2px solid blue;
+}

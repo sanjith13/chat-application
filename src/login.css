@@ -1,0 +1,60 @@
+.login{
+    background-color: blue;
+}
+.login__form{
+    margin-top : 10%;
+    margin-left: 50%;
+    width: 500px;
+    z-index: 100;
+    position:absolute;
+    padding : 30px 30px;
+}
+.login__logo{
+    text-align: center;
+}
+.login >img{
+    width: 50%;
+    opacity: 0.5;
+    position: absolute;
+    overflow: hidden;
+    animation: img 20s infinite linear;
+}
+@keyframes img {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.login__logo > h1{
+    color:blue;
+}
+.login__logo > h4{
+    color:greenyellow;
+}
+.login__input{
+    text-align: center;
+}
+.login__input > input{
+    margin-top:20px;
+    padding: 10px;
+    border-radius: 99px;
+    border:none;
+    width: 200px;
+    background-color:rgb(233, 236, 245);
+    border: 2px solid greenyellow;
+}
+.login__input >button {
+    margin-top:20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:blue;
+    color:greenyellow;
+    border: 2px solid greenyellow;
+}
+.login__input >button:hover {
+    background-color:greenyellow;
+    color:blue;
+    border: 2px solid blue;
+}
